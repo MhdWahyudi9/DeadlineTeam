@@ -14,6 +14,10 @@
             "dest": "/public/css/"
         },
         {
+            "src": "/maps/(.*)",
+            "dest": "/public/css/maps/"
+        },
+        {
             "src": "/images/(.*)",
             "dest": "/public/images/"
         },
@@ -32,6 +36,22 @@
         {
             "src": "/vendors/(.*)",
             "dest": "/public/vendors/"
+        },
+        {
+            "src": "/chart.js/(.*)",
+            "dest": "/public/vendors/chart.js/"
+        },
+        {
+            "src": "/css/(.*)",
+            "dest": "/public/vendors/css/"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/public/vendors/js/"
+        },
+        {
+            "src": "/mdi/(.*)",
+            "dest": "/public/vendors/mdi/"
         },
         {
             "src": "/(.*)",
