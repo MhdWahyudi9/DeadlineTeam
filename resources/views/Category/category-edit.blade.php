@@ -8,7 +8,7 @@
         <div class="col-md-6 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h3>Edit Categori</h3>
+                    <h3 class="font-weight-bold">Edit Categori</h3>
                     <p class="card-description">
                     </p>
                     @if ($errors->any())
@@ -25,12 +25,12 @@
                         @csrf
                         @method('put')
                         <div class="form-group">
-                            <label for="name">Username</label>
+                            <label for="name" class="font-weight-bold">Username</label>
                             <input type="text" name="name" class="form-control " id="name" placeholder="Nama Categories" value="{{$category->name}}">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary mr-2">Update</button>
-                        <button class="btn btn-light">Cancel</button>
+                        <button type="submit" class="btn btn-primary mr-2 font-weight-bold">Update</button>
+                        <button class="btn btn-light font-weight-bold">Cancel</button>
                     </form>
                 </div>
             </div>

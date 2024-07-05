@@ -7,7 +7,7 @@
         <div class="mt-5 col-lg-12 grid-margin stretch-card">
             <div class="card">
               <div class="card-body">
-                <h2 class="text-dark text-border">Mobil List</h2>
+                <h2 class="text-dark text-border">Mobil</h2>
                 <p class="card-description">
                   Admin dapat melihat list mobil yang tersedia
                 </p>

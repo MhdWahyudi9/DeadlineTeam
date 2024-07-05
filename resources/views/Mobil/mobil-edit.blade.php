@@ -71,7 +71,7 @@
                         <br>
                         
                         <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                        <a href="mobil" class="btn btn-rounded btn-danger mr-2">Cancel</a>
+                        <a href="/mobil/" class="btn btn-rounded btn-danger mr-2">Cancel</a>
                     </form>
                 </div>
             </div>

@@ -27,9 +27,9 @@
           <div class="col-lg-6 d-flex align-items-center justify-content-center">
             <div class="auth-form-transparent text-left p-3">
               <div class="brand-logo">
-                <img src="../../images/logo.svg" alt="logo">
+                <img src="../../images/download.png" alt="logo">
               </div>
-              <h4>New here?</h4>
+              <h4>Mari Bergabung Bersama Kami</h4>
               <h6 class="font-weight-light">Join us today! It takes only few steps</h6>
               @if ($errors->any())
                 <div class="alert alert-danger">
@@ -50,7 +50,7 @@
               <form action="" method="post" class="pt-3" >
                 @csrf
                 <div class="form-group">
-                  <label for="username">Username</label>
+                  <label for="username" class="form-label">Username</label>
                   <div class="input-group">
                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Password</label>
+                  <label for="password" class="form-label">Password</label>
                   <div class="input-group">
                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Phone</label>
+                  <label for="phone" class="form-label">Phone</label>
                   <div class="input-group">
                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Address</label>
+                  <label for="address" class="form-label" >Address</label>
                   <div class="input-group">
                     <div class="input-group-prepend bg-transparent">
                       <span class="input-group-text bg-transparent border-right-0">
@@ -107,7 +107,7 @@
             </div>
           </div>
           <div class="col-lg-6 register-half-bg d-none d-lg-flex flex-row">
-            <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2018  All rights reserved.</p>
+            <p class="h2 text-white font-weight-medium text-center flex-grow align-self-end mb-2">Gambar tidak di perjual belikan wkwkwk</p>
           </div>
         </div>
       </div>

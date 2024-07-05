@@ -37,8 +37,8 @@ class AuthController extends Controller
                 $request->session()->regenerateToken();
 
                 Session::flash('status', 'Gagal');
-                Session::flash('message', 'Akun kau belum aktiv, cubo wa ke dulu');
-                return redirect('/login');
+                Session::flash('message', 'Akun kau belum aktiv');
+                return redirect('login');
             }
 
             // $request->session()->regenerate();
@@ -50,14 +50,10 @@ class AuthController extends Controller
                 return redirect('profile');
             }
 
-
-
-
-            // return redirect();
         }
 
         Session::flash('status', 'Gagal');
-        Session::flash('message', 'Akun kau belum aktiv, cubo wa ke dulu');
+        Session::flash('message', 'Akun kau belum aktiv, chat ke Admin dahulu');
         return redirect('login');
 
     }
@@ -77,14 +73,14 @@ class AuthController extends Controller
             'password' => 'required|max:255',
             'phone' => 'max:255',
             'address' => 'required',
-
         ]);
 
-        $request['password'] = Hash::make($request->newPassword);
-        $user = User::create($request->all());
+        $validated['password'] = Hash::make($validated['password']);
+        $user = User::create($validated);
 
         Session::flash('status', 'SUCCESS');
         Session::flash('message', 'Cubo chat lagi di wa admin');
         return redirect('register');
     }
+
 }

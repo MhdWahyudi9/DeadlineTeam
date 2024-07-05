@@ -26,9 +26,9 @@ class DashboardController extends Controller
             ->all();
 
         // Prepare data for chart
-        $chartData = array_fill(1, 12, 0);
+        $chartData = array_fill(6, 8, 12);
         foreach ($rentLogs as $month => $count) {
-            $chartData[$month] = $count;
+            $chartData[$month - 1] = $count;
         }
 
         return view('Dashboard.dashboard', [

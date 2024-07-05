@@ -50,8 +50,8 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="/user-detail/{{$item->slug}}">detail</a>
-                                <a href="/user-blok/{{$item->slug}}">Blokir</a>
+                                <a href="/user-detail/{{$item->slug}}" class="btn btn-rounded btn-warning ">detail</a>
+                                <a href="/user-blok/{{$item->slug}}"class="btn btn-rounded btn-danger ">Blokir</a>
                             </td>
                             
                         </tr>

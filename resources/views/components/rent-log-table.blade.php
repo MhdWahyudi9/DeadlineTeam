@@ -2,22 +2,22 @@
     <table class="table table-striped">
         <thead>
           <tr>
-            <th>
+            <th class="font-weight-bold">
               No.
             </th>
-            <th>
+            <th class="font-weight-bold">
               User
             </th>
-            <th>
+            <th class="font-weight-bold">
               Mobil
             </th>
-            <th>
+            <th class="font-weight-bold">
               Rent Date
             </th>
-            <th>
+            <th class="font-weight-bold">
               Return Date
             </th>
-            <th>
+            <th class="font-weight-bold">
               Actual Return Date
             </th>
           </tr>

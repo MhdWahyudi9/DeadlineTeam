@@ -7,7 +7,7 @@
         <div class="mt-5 col-lg-12 grid-margin stretch-card">
             <div class="card">
               <div class="card-body">
-                <h2 class="text-dark font-weight-bold">User List</h2>
+                <h2 class="text-dark font-weight-bold"> Register User List</h2>
                 <p class="card-description">
                   Daftar Pengguna yang belum di Approve Admin
                 </p>
@@ -42,7 +42,7 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="/user-detail/{{$item->slug}}">detail</a>
+                                <a href="/user-detail/{{$item->slug}}" class="mt-4 mb-4 btn btn-rounded btn-warning mt-5">detail</a>
                             </td>
                             
                         </tr>

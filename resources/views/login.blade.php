@@ -35,7 +35,8 @@
               <form action="{{route('login')}}" method="post" class="pt-3">
                 @csrf
                 <div class="form-group">
-                  <div class="input-group">
+
+                  <div class="input-group mt-4">
                     <div class="input-group-prepend ">
                       <span class="input-group-text bg-transparent border-right-0">
                         <i class="mdi mdi-account-outline text-primary"></i>

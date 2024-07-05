@@ -36,7 +36,9 @@
                         <select  name="mobil_id" id="mobil" class="form-control inputbox">
                             <option value="">Select Mobil</option>
                             @foreach ($mobil as $item)
-                            <option value="{{$item->id}}">{{$item->title}}</option>
+                            <option value="{{$item->id}}">{{$item->title}} | <p class="card-text  {{$item->status =='in stock' ?'text-success':'text-danger'}}">{{$item->status}}</p></i>
+                            </div>
+                            </option>
                             @endforeach
                         </select>
                     </div>

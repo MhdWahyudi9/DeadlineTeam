@@ -32,7 +32,7 @@ class MobilRentController extends Controller
         if ($mobil->status != 'in stock') {
             Session::flash('message', 'Mobil tidak tersedia');
             Session::flash('alert-class', 'alert-danger');
-            return redirect('mobil-rent'); // Menggunakan nama rute yang benar
+            return redirect('mobil-rent');
         } else {
             $count = RentLogs::where('user_id', $request->user_id)->where('actual_return_date', null)
                 ->count();
@@ -40,7 +40,7 @@ class MobilRentController extends Controller
             if ($count >= 3) {
                 Session::flash('message', 'Pengguna Melewati Batas jumlah Peminjaman Mobil');
                 Session::flash('alert-class', 'alert-danger');
-                return redirect('mobil-rent'); // Menggunakan nama rute yang benar   
+                return redirect('mobil-rent');
             }
             try {
                 DB::beginTransaction();

@@ -31,7 +31,7 @@
                     <div class="row">
                         @foreach ($mobil as $item)
                             <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                                <div class="card h-100" >
+                                <div class="card " >
                                     {{-- Menggunakan Turnarry operator, kalau gk salah sih wkwk --}}
                                     <img src="{{$item->gambar != null ? asset('storage/gambar/'.$item->gambar) : asset('image/image-not-found.png')}}" class="card-img-top" draggable="false">
                                     <div class="card-body">

@@ -10,7 +10,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="h3 text-xm font-weight-bold text-dark text-uppercase mb-1">
+                        <div class="h3 text-xm font-weight-bold text-dark  mb-1">
                             Mobil
                         </div>
                         <div class="mb-0 font-weight-bold text-gray-800">
@@ -30,7 +30,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div href="categories" class="h3 text-xm font-weight-bold text-dark text-uppercase mb-1">
+                        <div href="categories" class="h3 text-xm font-weight-bold text-dark  mb-1 ">
                             Categories
                         </div>
                         <div class="mb-0 font-weight-bold text-gray-800">
@@ -45,12 +45,12 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-4 col-md-6 mb-5">
+    <div class="col-xl-4 col-md-4 mb-5">
         <div class="card border-left-success shadow h-100 py-2">
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="h3 text-xm font-weight-bold text-dark text-uppercase mb-1">
+                        <div class="h3 text-xm font-weight-bold text-dark  mb-1">
                             Users
                         </div>
                         <div class="mb-0 font-weight-bold text-gray-800">

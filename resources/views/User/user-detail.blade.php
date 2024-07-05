@@ -18,7 +18,9 @@
             <div class="alert alert-success">
                 {{session('status')}}
             </div>
+            
           @endif
+          <a href="/users/" class="mt-4 mb-4 btn btn-rounded btn-danger mt-0">Back</a>
         </div>
         <form class="forms-sample">
           <div class="form-group">
@@ -37,6 +39,7 @@
             <label for="" class="form-label">status</label>
             <input type="text" class="form-control" id="" readonly value="{{$user->status}}">
           </div>
+          <a href=""></a>
         </form>
       </div>
     </div>

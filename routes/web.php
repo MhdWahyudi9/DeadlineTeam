@@ -26,6 +26,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('profile', [UserController::class, 'profile'])->middleware('only_client');
 
+    Route::get('mobil-rent', [MobilRentController::class, 'index']);
+    Route::post('mobil-rent', [MobilRentController::class, 'store']);
+
 
 
     Route::middleware('only_admin')->group(function () {
@@ -61,8 +64,6 @@ Route::middleware('auth')->group(function () {
         Route::get('user-banned', [UserController::class, 'bannedUser']);
         Route::get('user-restore/{slug}', [UserController::class, 'restore']);
 
-        Route::get('mobil-rent', [MobilRentController::class, 'index']);
-        Route::post('mobil-rent', [MobilRentController::class, 'store']);
 
         Route::get('rent_logs', [RentLogController::class, 'index']);
 

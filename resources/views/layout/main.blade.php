@@ -37,7 +37,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{url('dashboard')}}">
                   <i class="mdi mdi-home menu-icon"></i>
-                  <span class="menu-title">Dashboard</span>
+                  <span class="menu-title ">Dashboard</span>
                 </a>
               </li>
   
@@ -74,18 +74,18 @@
                 <span class="menu-title">Rent Log</span>
               </a>
               </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="{{url('mobil-rent')}}">
+                  <i class="mdi mdi-shape-square-plus menu-icon"></i>
+                  <span class="menu-title">Mobil Rent</span>
+                </a>
+              </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="{{url('mobil-return')}}">
                   <i class="mdi mdi-keyboard-return menu-icon"></i>
                   <span class="menu-title">Pengembalian Mobil</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="{{url('mobil-rent')}}">
-                  <i class="mdi mdi-shape-square-plus menu-icon"></i>
-                  <span class="menu-title">Mobil Rent</span>
                 </a>
               </li>
 
@@ -105,14 +105,22 @@
               </li>
               <li class="nav-item">
               <a class="nav-link" href="{{url('/')}}">
-                <i class="mdi mdi-account menu-icon"></i>
+                <i class="mdi mdi-format-list-bulleted-type menu-icon"></i>
                 <span class="menu-title">List Mobil</span>
               </a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{{url('mobil-rent')}}">
+                  <i class="mdi mdi-shape-square-plus menu-icon"></i>
+                  <span class="menu-title">Mobil Rent</span>
+                </a>
+              </li>
+              
               </li>
               <li class="nav-item">
               <a class="nav-link" href="{{url('logout')}}">
-                <i class="mdi mdi-palette menu-icon"></i>
-                <span class="mdi mdi-logout">logout</span>
+                <i class="mdi mdi-logout menu-icon"></i>
+                <span class="menu-title">logout</span>
               </a>
               </li>
             @endif
@@ -132,11 +140,9 @@
             <li class="nav-item">
               <a class="nav-link" >
                 <i class="mdi mdi-whatsapp menu-icon"></i>
-                <span class="menu-title">Admin|0813xxxx</span>
+                <span class="menu-title">Admin <br><br> 0813xxxxxx1</span>
               </a>
             </li>
-
-            
           @endif
   
         </ul>

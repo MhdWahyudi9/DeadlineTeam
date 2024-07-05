@@ -11,17 +11,23 @@ class PublicController extends Controller
     public function index(Request $request)
     {
         $categories = Category::all();
-        if ($request->category || $request->title) {
-            $mobil = Mobil::where('title', 'like', '%' . $request->title . '%')
-                ->orWhereHas('categories', function ($q) use ($request) {
-                    $q->where('categories.id', $request->category);
-                })
-                ->get();
-        } else {
 
-            $mobil = Mobil::all();
+        $mobil = Mobil::query();
+
+        if ($request->category) {
+            $mobil = $mobil->whereHas('categories', function ($q) use ($request) {
+                $q->where('categories.id', $request->category);
+            });
         }
+
+        if ($request->title) {
+            $mobil = $mobil->where('title', 'like', '%' . $request->title . '%');
+        }
+
+        $mobil = $mobil->get();
 
         return view('mobil-list', ['mobil' => $mobil, 'categories' => $categories]);
     }
 }
+
+
