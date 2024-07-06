@@ -26,10 +26,6 @@
             "dest": "/public/image/"
         },
         {
-            "src": "/gambar/(.*)",
-            "dest": "/public/storage/gambar/"
-        },
-        {
             "src": "/js/(.*)",
             "dest": "/public/js/"
         },
@@ -56,6 +52,10 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/gambar/(.*)",
+            "dest": "/public/storage/gambar/"
         }
     ],
     "env": {
