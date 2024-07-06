@@ -54,8 +54,8 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/gambar/(.*)",
-            "dest": "/public/storage/"
+            "src": "/storage/(.*)",
+            "dest": "/public/storage/$1"
         }
     ],
     "env": {

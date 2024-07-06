@@ -55,10 +55,9 @@ class MobilController extends Controller
         if ($request->file('image')) {
             $extension = $request->file('image')->getClientOriginalExtension();
             $newName = $request->title . '-' . now()->timestamp . '.' . $extension;
-            $request->file('image')->storeAs('gambar', $newName);
-            $request['gambar'] = $newName;
+            $request->file('image')->storeAs('public/gambar', $newName);
+            $request['public/gambar'] = $newName;
         }
-
 
         $mobil = Mobil::where('slug', $slug)->first();
         $mobil->update($request->all());
