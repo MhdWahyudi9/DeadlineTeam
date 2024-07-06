@@ -55,7 +55,7 @@
         },
         {
             "src": "/gambar/(.*)",
-            "dest": "/public/storage/gambar/"
+            "dest": "/public/storage/"
         }
     ],
     "env": {
