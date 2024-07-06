@@ -36,7 +36,7 @@ class MobilController extends Controller
             $request->file('image')->storeAs('public/gambar', $newName);
         }
 
-        $request['gambar'] = $newName;
+        $request['public/gambar'] = $newName;
         $mobil = Mobil::create($request->all());
         $mobil->categories()->sync($request->categories);
         return redirect('mobil')->with('status', 'Mobil Berhasil Di Tambahkan');
